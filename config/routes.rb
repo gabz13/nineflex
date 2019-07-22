@@ -13,5 +13,8 @@ Rails.application.routes.draw do
   get 'freelancers/create'
   get 'freelancers/edit'
   get 'freelancers/destroy'
+
+         root to: "home#index"
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
