@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+  get 'pages/about'
+  get 'pages/contact'
+  devise_for :clients
+  devise_for :freelancers
   get 'clients/index'
   get 'clients/new'
   get 'clients/create'
@@ -13,5 +18,7 @@ Rails.application.routes.draw do
   get 'freelancers/create'
   get 'freelancers/edit'
   get 'freelancers/destroy'
+
+        root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
