@@ -1,2 +1,14 @@
-<h1>Freelancers#new</h1>
-<p>Find me in app/views/freelancers/new.html.erb</p>
+<div class="form-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-xs-12">
+        <h1>Add</h1>
+        <%= render 'form', freelancer: @freelancer %>
+          <div class="form-color">
+        <%= link_to "Back", freelancers_path, class: "btn btn-outline-info btn-block form-button "  %>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

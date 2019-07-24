@@ -1,4 +1,5 @@
 class ClientsController < ApplicationController
+  skip_before_action :authenticate_client!, only: [:index, :show]
   def index
   end
 
