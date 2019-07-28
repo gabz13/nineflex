@@ -8,8 +8,9 @@ class FreelancersController < ApplicationController
     @freelancers = Freelancer.all
   end
 
-   def show
-    end
+  def show
+
+  end
 
   def new
     @freelancer = Freelancer.new
