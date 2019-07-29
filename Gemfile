@@ -34,6 +34,12 @@ gem 'jbuilder', '~> 2.5'
 # dotenv
 gem 'dotenv-rails', groups: [:development, :test]
 
+# cloudinary
+gem 'cloudinary', '~> 1.9.1'
+
+# carrierwave
+gem 'carrierwave', '~> 1.2'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
