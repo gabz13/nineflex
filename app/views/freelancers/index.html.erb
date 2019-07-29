@@ -4,7 +4,15 @@
     <!-- <div class="d-flex justify-content-between"> -->
       <% @freelancers.each do |freelancer| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-        <%= render partial: 'card', locals: { freelancer: freelancer } %>
+        <%= render partial: 'card' %>
       </div>
       <% end %>
+
+      <%= cl_image_tag("yx5eecj6b5feaxwbzkey",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("fyty6dwd9x5sn6zhimfb",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
     </div>
+<%#= cl_image_tag @freelancer.photo, height: 300, width: 400, crop: :fill %>

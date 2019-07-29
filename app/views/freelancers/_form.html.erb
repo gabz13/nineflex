@@ -3,6 +3,8 @@
       <%= f.input :first_name, input_html: { class: "animal-input"} %>
       <%= f.input :last_name, input_html: { class: "animal-input"} %>
       <%= f.input :email, input_html: { class: "animal-input"} %>
+       <%= f.input :photo, input_html: { class: 'd-none' }, label_html: { class: 'upload-photo'}, label: '📷 Upload a photo'%>
+             <%#= f.input :photo_cache, as: :hidden %>
 
 
       <%= f.input :description, input_html: { class: "animal-input"} %>
